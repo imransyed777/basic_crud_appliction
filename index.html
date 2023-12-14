@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <title>GKB TASK</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="enterName"><b>Name</b></label>
+                        <input type="text" pattern=[A-Z]{1-20} name="enterName" id="enterName" required >
+                    </div>
+                    <div>
+                        <label for="emAil"><b>Email</b></label><br>
+                        <input type="email" name="emAil" id="emAil" required>
+                    </div>
+                    <div>
+                        <label for="age"><b>Age</b></label>
+                        <input type="number" name="age" id="age" required>
+                    </div>
+                    <div>
+                        <label for="dob"><b>Date of birth</b></label><br><br>
+                        <input type="date" name="dob" id="dob" required>
+                    </div>
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Age</th>
+                                <th>Dateofbirth</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
